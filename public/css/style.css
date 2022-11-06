@@ -1,0 +1,47 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+.error {
+	font-size: 40px;
+	color: black;
+	font-weight: 600;
+}
+
+.errorc {
+	font-size: 150px;
+	color: black;
+	font-weight: 600;
+}
+
+.back {
+	font-size: 40px;
+	color: black;
+	font-weight: 600;
+}
+
+.content-error {
+	margin-top: 200px;
+}
+
+.columns {
+	justify-content: center;
+	padding: 30px;
+	width: 350px;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+	<title>Starter Template - Materialize</title>
+
+	<!-- CSS  -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<script src="https://mapgl.2gis.com/api/js/v1"> </script>
+	<script src="js/script.js"></script>
+
+</head>
+
+<body>
+	<nav class="red lighten-1" role="navigation">
+		<div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="#">Карта</a></li>
+				<li><a href="#">О нас</a></li>
+			</ul>
+
+			<ul id="nav-mobile" class="sidenav">
+				<li><a href="#">Карта</a></li>
+				<li><a href="#">О нас</a></li>
+			</ul>
+			<a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+		</div>
+	</nav>
+
+	<div class="row">
+		<div class="" id="map" style="width:1000px; height:600px; display: block; margin: 20px;"></div>
+
+		<form id="form">
+			<div class="columns">
+				<div class="input-field" style="width: 250px;">
+					<input type="text" name="name" class="name" placeholder="Поиск">
+				</div>
+				<span>Как вам хочется провести время?</span>
+				<div style="width: 250px; margin-top: 10px;">
+					<p>
+
+						<label>
+							<input name="timeMuseum" style="margin-top: 10px;" type="checkbox" class="filled-in" />
+							<span>Музеи</span>
+						</label>
+						<label>
+							<input name="timeFunObjects" style="margin-top: 10px;" type="checkbox" class="filled-in" />
+							<span>Развлекательные мероприятия и объекты</span>
+						</label>
+						<label>
+							<input name="timeLearn" style="margin-top: 10px;" type="checkbox" class="filled-in" />
+							<span>Образовательная программа</span>
+						</label>
+						<label>
+							<input name="timeSportObjects" style="margin-top: 10px;" type="checkbox" class="filled-in" />
+							<span>Спортивные объекты и мероприятия</span>
+						</label>
+						<label>
+							<input name="timeEat" style="margin-top: 10px;" type="checkbox" class="filled-in" />
+							<span>Гастрономические мероприятия</span>
+						</label>
+						<label>
+							<input name="timeWalk" style="margin-top: 10px;" type="checkbox" class="filled-in" />
+							<span>Прогулка</span>
+						</label>
+						<label>
+							<input name="timeKids" style="margin-top: 10px;" type="checkbox" class="filled-in" />
+							<span>Детские площадки</span><br>
+						</label>
+						<label>
+							<input name="timeToilet" style="margin-top: 10px;" type="checkbox" class="filled-in" />
+							<span>Туалет</span><br>
+						</label>
+						<label>
+							<input name="timeEating" style="margin-top: 10px;" type="checkbox" class="filled-in" />
+							<span>Прием пищи</span>
+						</label>
+					</p>
+				</div>
+
+				<div class="input-field col s12">
+					<select multiple name="price">
+						<option value="" disabled selected></option>
+						<option value="1">Только бесплатно</option>
+						<option value="2">Можно платно</option>
+						<option value="3">Без разницы</option>
+					</select>
+					<label>Стоимость</label>
+				</div>
+
+				<div class="input-field col s12">
+					<select multiple name="walk">
+						<option value="" disabled selected></option>
+						<option value="1">Пешком</option>
+						<option value="2">Предпочтительно на электробусах</option>
+						<option value="3">Без разницы</option>
+					</select>
+					<label>Передвижение по территории</label>
+				</div>
+
+				<div class="input-field col s12">
+					<select multiple name="people">
+						<option value="" disabled selected></option>
+						<option value="1">Больше людей</option>
+						<option value="2">Меньше людей</option>
+						<option value="3">Без разницы</option>
+					</select>
+					<label>Загруженность </label>
+				</div>
+
+				<div class="input-field col s12">
+					<select multiple name="room">
+						<option value="" disabled selected></option>
+						<option value="1">Только на улице</option>
+						<option value="2">Только в помещениях</option>
+						<option value="3">Без разницы</option>
+					</select>
+					<label>Местонахождение</label>
+				</div>
+
+				<label>
+					<input name="peopleOVZ" style="margin-top: 10px;" type="checkbox" class="filled-in" />
+					<span>Доступность для людей с ОВЗ</span>
+				</label>
+
+				<button type="submit" class="red waves-light btn"
+					style="width: 150px; margin-top: 20px;">Выполнить</button>
+			</div>
+		</form>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="js/materialize.js"></script>
+	<script src="js/init.js"></script>
+	<script>CreateMap()</script>
+
+</body>
+
+
+</html>
